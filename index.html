@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Front-end intake assignment - HTML CSS and Javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+    <title>Saxum Intake assignment: HTML - CSS - Javascript</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+	
+	<!-- Javascripts -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="js/materialmenu.jquery.min.js"></script>
+
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// De functie fullpage wordt aangeroepen
+			$('main').fullpage({	
+				// De anchors worden bepaald, deze moeten overeen komen met de navigatie onderdelen en bepalen de a.d.h.v. de volgorde, welk menu-item naar welk contentblok linkt
+				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+				// Er wordt aangegeven welk HTML element de navigatie is
+				menu: '.navBar',
+				// De snelheid waarmee de contentblokken animeren
+				scrollingSpeed: 1000
+			});
+
+			// De functie meterialmenu wordt aangeroepen
+			$('.material-menu ul').materialmenu({
+				// Geef een eigen class mee voor de button die het menu triggered
+				buttonClass: 'toggleMobileNav'
+			});
+			
+		});
+	</script>
+	
+	</head>
+  <body>
+  
+  <head>
+	<div class="toggleMobileNav">
+		<img src="images/icon-menu.svg" />
+	</div>
+  </head>
+  
+
+	<nav class="navBar material-menu">	
+      <h4>Navigation</h4>
+      <ul>
+        <li><a data-menuanchor="firstPage"href="#firstPage">Link One</a></li>
+        <li><a data-menuanchor="secondPage" href="#secondPage">Link Two</a></li>
+        <li><a data-menuanchor="thirdPage" href="#thirdPage">Link Three</a></li>
+		<li><a data-menuanchor="fourthPage" href="#fourthPage">Link Four</a></li>
+		<li><a data-menuanchor="lastPage" href="#lastPage">Link Five</a></li>
+      </ul>
+    </nav>
+
+	<main>
+			<div id="sectionOne" class="section">
+				<h2>Section One</h2>
+				<p>Het Amerikaanse leger heeft een robotvis ontwikkeld. De Ghost Swimmer kan onder meer gebruikt worden om data te verzamelen en om bijvoorbeeld zeemijnen op te sporen.</p>
+			</div>
+			
+			<div id="sectionTwo" class="section">
+				<h2>Section Two</h2>
+				<p>De robotvis is anderhalve meter lang en weegt 100 kilo. De wetenschap erachter heet de biomimetica, de studie om ontwerpen uit de natuur zo goed mogelijk na te maken. In dit geval betekent dat dus een zeer realistische namaakvis. </p>
+			</div>
+			
+			<div id="sectionThree" class="section">
+				<h2>Section Three</h2>
+				<p>Op dit ogenblik wordt Ghost Swimmer gebruikt om data te verzamelen over stromingen, getijden en weerfenomenen. Op termijn moet de robot het gebruik van dolfijnen en zeeleeuwen om zeemijnen op te sporen, vervangen. </p>
+			</div>	
+
+			<div id="sectionFour" class="section">
+				<h2>Section Four</h2>
+				<p>Op dit ogenblik wordt Ghost Swimmer gebruikt om data te verzamelen over stromingen, getijden en weerfenomenen. Op termijn moet de robot het gebruik van dolfijnen en zeeleeuwen om zeemijnen op te sporen, vervangen. </p>
+			</div>		
+
+			<div id="sectionFive" class="section">
+				<h2>Section Five</h2>
+				<p>Op dit ogenblik wordt Ghost Swimmer gebruikt om data te verzamelen over stromingen, getijden en weerfenomenen. Op termijn moet de robot het gebruik van dolfijnen en zeeleeuwen om zeemijnen op te sporen, vervangen. </p>
+			</div>	
+    </main>
+	
+	
+	
+	</body>
+</html>

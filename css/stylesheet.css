@@ -1,0 +1,213 @@
+/* Global style */
+
+.clear {
+	clear: both;
+}
+
+/* Typography */
+
+h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 5em;
+	margin: 0;
+}
+
+h4 {
+    color: #fff;
+    margin: 60% 0 0 0;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+	font-size: 14px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden !important;
+}
+
+
+/* Page Layout */
+
+main {
+	width: 100%;
+	height: 100%;
+}
+
+.navBar {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 16%; 
+	height: 100%;
+	background: url("../images/dark_wood.png") #000;
+	border-right: 1px solid #ccc;
+	z-index: 8888;
+	text-align: center;
+	-webkit-box-shadow: 8px 0px 6px 0px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow:    8px 0px 6px 0px rgba(0, 0, 0, 0.35);
+	box-shadow:         8px 0px 6px 0px rgba(0, 0, 0, 0.35);
+}
+
+	.navBar ul {
+		list-style: none;
+		padding: 0;
+	}
+	
+		.navBar ul li a {
+			line-height: 26px;
+			width: 100%;
+			display: block;
+		}
+		
+			.navBar ul li a:hover {
+				background: rgba(0, 0, 0, 0.8);
+			}
+
+.section {
+	position: relative;
+	text-align: center;
+	padding: 0 0 0 16%;
+}
+
+	.section p {
+		width: 40%;
+		margin: 0 auto;
+		display: block;
+		line-height: 22px;
+	}
+	
+	#scroller {
+		display: block;
+	}
+
+	#sectionOne {
+		background: #ff7f00;
+	}
+
+	#sectionTwo {
+		background: #3dd4ff;
+	}
+
+	#sectionThree {
+		background: #c6ff3d;
+	}
+	
+	#sectionFour {
+		background: #d01c57;
+		color: #fff;
+	}
+	
+	#sectionFive {
+		background: #26ecc0;
+	}
+
+
+/* Custom fullPage.js style */
+.fp-section.fp-table, 
+.fp-slide.fp-table 
+{
+    display: table;
+    table-layout: fixed;
+    width: 84%;
+}
+
+.fp-tableCell {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.toggleMobileNav {
+	display: none;
+	padding: 2%;
+	position: fixed;
+	top: 2%;
+	right: 2%;
+	background: #000;
+	z-index: 88888;
+	-webkit-border-radius: 6px;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius: 6px;
+	-moz-border-radius-topright: 0;
+	border-radius: 6px;
+	border-top-right-radius: 0;
+	cursor: hand;
+	cursor: pointer;
+}
+
+	.toggleMobileNav img {
+		height: auto;
+		width: 20px;
+	}
+
+
+/* Responsive style */
+
+@media only screen and (max-width : 780px) {
+	.navBar {
+		background: none;
+		border-right: 0;
+		-webkit-box-shadow: none;
+		-moz-box-shadow:    none;
+		box-shadow:         none;
+		left: -250px;
+	}
+	
+	.navBar h4 {
+		display: none;
+	}
+	
+	.toggleMobileNav {
+		display: block;
+	}
+	
+	.section {
+		padding: 0;
+	}
+
+	.section p {
+		width: 90%;
+	}
+	
+	.fp-section.fp-table, 
+	.fp-slide.fp-table 
+	{
+		width: 100%;
+	}
+	
+	.material-menu-view-mobile {
+		background: url("../images/dark_wood.png") #000;
+		border-right: 1px solid #ccc;
+		-webkit-box-shadow: 8px 0px 6px 0px rgba(0, 0, 0, 0.35);
+		-moz-box-shadow:    8px 0px 6px 0px rgba(0, 0, 0, 0.35);
+		box-shadow:         8px 0px 6px 0px rgba(0, 0, 0, 0.35);
+	}
+	
+	.material-menu-overlay {
+		z-index: 1 !important;
+	}
+	
+	.navBar ul {
+		margin: 50% 0 0 0;
+	}
+	
+		navBar ul li a {
+			line-height: 30px;
+		}
+	
+}
+
