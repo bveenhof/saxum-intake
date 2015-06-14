@@ -8,6 +8,7 @@
     <title>Saxum Intake assignment: HTML - CSS - Javascript</title>
 
     <!-- Style -->
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
     <link rel="stylesheet" href="css/stylesheet.css">
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:200' rel='stylesheet' type='text/css'>
@@ -28,7 +29,8 @@
 				// Er wordt aangegeven welk HTML element de navigatie is
 				menu: '.navBar',
 				// De snelheid waarmee de contentblokken animeren
-				scrollingSpeed: 1000
+				scrollingSpeed: 1000,
+				slidesNavigation: true
 			});
 
 			// De functie meterialmenu wordt aangeroepen
@@ -63,8 +65,22 @@
 
 	<main>
 			<div id="sectionOne" class="section">
-				<h2>Section One</h2>
-				<p>Het Amerikaanse leger heeft een robotvis ontwikkeld. De Ghost Swimmer kan onder meer gebruikt worden om data te verzamelen en om bijvoorbeeld zeemijnen op te sporen.</p>
+				<div class="slide">
+					<h2>Section One</h2>
+					<p>Het Amerikaanse leger heeft een robotvis ontwikkeld. De Ghost Swimmer kan onder meer gebruikt worden om data te verzamelen en om bijvoorbeeld zeemijnen op te sporen.</p>
+				</div>
+				<div class="slide partTwo">
+					<h3>Section One - Part 2</h3>
+					<p>Het Amerikaanse leger heeft een robotvis ontwikkeld. De Ghost Swimmer kan onder meer gebruikt worden om data te verzamelen en om bijvoorbeeld zeemijnen op te sporen.</p>
+				</div>
+				<div class="slide partThree">
+					<h3>Section One - Part 3</h3>
+					<p>Het Amerikaanse leger heeft een robotvis ontwikkeld. De Ghost Swimmer kan onder meer gebruikt worden om data te verzamelen en om bijvoorbeeld zeemijnen op te sporen.</p>
+				</div>
+				<div class="slide partFour">
+					<h3>Section One - Part 4</h3>
+					<p>Het Amerikaanse leger heeft een robotvis ontwikkeld. De Ghost Swimmer kan onder meer gebruikt worden om data te verzamelen en om bijvoorbeeld zeemijnen op te sporen.</p>
+				</div>
 			</div>
 			
 			<div id="sectionTwo" class="section">

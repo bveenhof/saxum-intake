@@ -13,6 +13,13 @@ h2 {
 	margin: 0;
 }
 
+h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 4em;
+	margin: 0;
+}
+
 h4 {
     color: #fff;
     margin: 60% 0 0 0;
@@ -96,6 +103,19 @@ main {
 	#sectionOne {
 		background: #ff7f00;
 	}
+	
+		#sectionOne .partTwo {
+			background: #78e654;
+		}
+		
+		#sectionOne .partThree {
+			background: #ad54e6;
+		}
+		
+		#sectionOne .partFour {
+			background: #54a0e6;
+			color: #fff;
+		}
 
 	#sectionTwo {
 		background: #3dd4ff;
@@ -115,13 +135,13 @@ main {
 	}
 
 
+	
 /* Custom fullPage.js style */
 .fp-section.fp-table, 
 .fp-slide.fp-table 
 {
     display: table;
     table-layout: fixed;
-    width: 84%;
 }
 
 .fp-tableCell {
@@ -130,6 +150,30 @@ main {
     vertical-align: middle;
     width: 100%;
 }
+
+.fp-controlArrow.fp-prev {
+    background: url("../images/icon-arrow-left.svg") no-repeat center center / cover ;
+    border-color: transparent;
+    border-width: 0;
+    height: 72px;
+    left: 17%;
+    width: 40px;
+}
+
+.fp-controlArrow.fp-next {
+    background: url("../images/icon-arrow-right.svg") no-repeat center center / cover ;
+    border-color: transparent;
+    border-width: 0;
+    height: 72px;
+    width: 40px;
+}
+
+.fp-slidesNav {
+    left: 58%;
+}
+
+
+
 
 .toggleMobileNav {
 	display: none;
@@ -179,16 +223,29 @@ main {
 		padding: 0;
 	}
 
-	.section p {
-		width: 90%;
+		.section p {
+			width: 90%;
+		}
+		
+	h3 {
+		font-size: 2em;
 	}
-	
+		
 	.fp-section.fp-table, 
 	.fp-slide.fp-table 
 	{
 		width: 100%;
 	}
 	
+	.fp-controlArrow {
+		display: none
+	}
+
+	
+	.fp-slidesNav {
+		left: 50%;
+	}
+		
 	.material-menu-view-mobile {
 		background: url("../images/dark_wood.png") #000;
 		border-right: 1px solid #ccc;
